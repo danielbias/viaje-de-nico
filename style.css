@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0a1a;
+    color: #e0e0ff;
+    font-family: 'Exo 2', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(100, 80, 255, 0.1) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, rgba(255, 100, 255, 0.05) 0%, transparent 20%);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(10, 15, 40, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 150, 255, 0.2);
+    border: 1px solid rgba(100, 150, 255, 0.2);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(100, 150, 255, 0.3);
+}
+
+h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: 2.8rem;
+    color: #6ee7ff;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(110, 231, 255, 0.5);
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: #c2a5ff;
+}
+
+.highlight {
+    color: #ffeb3b;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #aaaaff;
+    margin-top: 10px;
+}
+
+.data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.card {
+    background: rgba(20, 30, 60, 0.6);
+    border-radius: 15px;
+    padding: 25px;
+    flex: 1;
+    min-width: 220px;
+    text-align: center;
+    border: 1px solid rgba(80, 120, 255, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 200, 255, 0.2);
+}
+
+.card h3 {
+    color: #80deff;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.big-number {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #4fc3f7;
+    margin: 10px 0;
+    text-shadow: 0 0 15px rgba(79, 195, 247, 0.7);
+}
+
+.small {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-top: 5px;
+}
+
+.mission, .books, .quote {
+    margin: 40px 0;
+    padding: 25px;
+    background: rgba(15, 25, 50, 0.5);
+    border-radius: 15px;
+    border-left: 5px solid #6a5af8;
+}
+
+h3 {
+    color: #80deff;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+li {
+    margin: 10px 0;
+    padding-left: 25px;
+    position: relative;
+}
+
+li:before {
+    content: '✨';
+    position: absolute;
+    left: 0;
+}
+
+.note {
+    font-style: italic;
+    color: #aaccff;
+    margin-top: 15px;
+}
+
+blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #d4b5ff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(100, 70, 255, 0.1);
+    border-left: 5px solid #b388ff;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #88aaff;
+    border-top: 1px solid rgba(100, 150, 255, 0.3);
+    padding-top: 20px;
+}
+
+.github a {
+    color: #6ee7ff;
+    text-decoration: none;
+    border: 1px solid #6ee7ff;
+    padding: 8px 15px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+.github a:hover {
+    background: rgba(110, 231, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+    .data {
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+}
